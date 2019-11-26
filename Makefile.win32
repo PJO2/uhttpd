@@ -1,0 +1,22 @@
+
+PellesCDir = C:\Program Files\PellesC
+
+CC = pocc.exe
+LINK = polink.exe
+
+CCFLAGS = -Tx86-coff -MT -D _CONSOLE -D WIN32 -Ze
+LINKFLAGS = -subsystem:console -machine:x86 -debugtype:po
+ADDLIBS = ws2_32.lib user32.lib
+
+INCLUDE = $(PellesCDir)\Include\Win;$(PellesCDir)\Include
+LIB = $(PellesCDir)\Lib\Win;$(PellesCDir)\Lib
+
+
+uhttpd.exe: uhttpd.obj
+	$(LINK) $(LINKFLAGS) -out:"$@" $** $(ADDLIBS)
+
+uhttpd.obj: uhttpd.c
+	$(CC) $(CCFLAGS) "$!" -Fo"$@" -I $(INCLUDE)
+
+clean:
+	del uhttpd.exe uhttpd.obj
