@@ -41,10 +41,9 @@ get the source, compile, run :
 
 
 ### set up for windows
-Even easier : get the binaries and run !
-
+compile with Pelles C
     > git clone https://github.com/PJO2/uweb
-    > uweb\WindowsBinaries\uweb32.exe -v -d uweb -x hello.html
+    > pomake Makefile.win32
 
 ### test it
 from a local web browser open this URL : http://127.0.0.1:8080/
