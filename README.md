@@ -40,10 +40,9 @@ get the source, compile, run :
     $ ./uhttpd -v -x hello.html
 
 
-### set up for windows
-compile with Pelles C
-    > git clone https://github.com/PJO2/uweb
-    > pomake Makefile.win32
+### set up for windows for the Pelles C compiler
+    $ git clone https://github.com/PJO2/uweb
+    $ pomake Makefile.win32
 
 ### test it
 from a local web browser open this URL : http://127.0.0.1:8080/
