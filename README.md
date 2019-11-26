@@ -36,7 +36,7 @@ uhttpd is made for you !
 get the source, compile, run :
 
     $ wget https://github.com/PJO2/uhttpd/raw/master/uhttpd.c
-    $ cc -D UNIX -o uhttpd uhttpd.c
+    $ cc -D UNIX -o uhttpd -O -D UNIX -Wall -l pthread uhttpd.c
     $ ./uhttpd -v -x hello.html
 
 
