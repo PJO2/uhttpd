@@ -40,8 +40,9 @@ get the source, compile, run :
     $ ./uhttpd -v -x hello.html
 
 
-### set up for windows for the Pelles C compiler
-    $ git clone https://github.com/PJO2/uweb
+### set up for windows 
+use the Pelles C compiler and add its directory into the PATH environment variable, then
+    $ certutil.exe -urlcache -split -f https://github.com/PJO2/uhttpd/raw/master/uhttpd.c
     $ pomake Makefile.win32
 
 ### test it
