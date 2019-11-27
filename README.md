@@ -35,8 +35,8 @@ uhttpd is made for you !
 ### Set up for Linux and MacOS
 get the source, compile, run :
 
-    $ wget https://github.com/PJO2/uhttpd/raw/master/uhttpd.c
-    $ cc -D UNIX -o uhttpd -O -D UNIX -Wall -l pthread uhttpd.c
+    $ curl -O -L -s https://github.com/PJO2/uhttpd/raw/master/uhttpd.c
+    $ cc -O -Wall -D UNIX -o uhttpd -l pthread uhttpd.c
     $ ./uhttpd -v -x hello.html
 
 
